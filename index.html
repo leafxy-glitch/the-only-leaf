@@ -10,162 +10,261 @@
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">The Only Leaf</a>
-    <nav class="nav">
-      <a href="#modules">Start Here</a>
-      <a href="#collections">Collections</a>
-      <a href="#journal">Founder</a>
-      <a href="#science">Science</a>
-      <a href="subscription.html" class="cta">Subscribe 9折</a>
-    </nav>
+    <div class="header-right">
+      <nav class="nav">
+        <a href="#modules" data-i18n="nav_start">Start Here</a>
+        <a href="#collections" data-i18n="nav_collections">Collections</a>
+        <a href="#journal" data-i18n="nav_founder">Founder</a>
+        <a href="#science" data-i18n="nav_science">Science</a>
+        <a href="subscription.html" class="cta" data-i18n="nav_subscribe">Subscribe 9折</a>
+      </nav>
+      <div class="lang-switch">
+        <label class="sr-only" for="lang-select">Language</label>
+        <select id="lang-select" class="lang-select" data-lang-select>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <p class="kicker">For Working Mama | Late 20s to 40s</p>
-        <h1 class="slogan">Efficiency meets Elegance.</h1>
-        <p class="sub">A one-screen decision flow for busy women: 高端眼罩 + 科学补剂 + 懒人订阅。少一步，快一点，稳一点。</p>
-        <div class="hero-ctas">
-          <a class="btn primary" href="#collections">Shop in 60s</a>
-          <a class="btn ghost" href="#science">See Transparency</a>
+    <section class="hero editorial-hero">
+      <div class="hero-media" aria-hidden="true">
+        <div class="hero-track">
+          <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-APjRQ59peUg?auto=format&fit=crop&w=1800&q=80');"></div>
+          <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-TkYe6WPIv6c?auto=format&fit=crop&w=1800&q=80');"></div>
+          <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-s3aDHKxHZSc?auto=format&fit=crop&w=1800&q=80');"></div>
+          <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-APjRQ59peUg?auto=format&fit=crop&w=1800&q=80');"></div>
+          <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-TkYe6WPIv6c?auto=format&fit=crop&w=1800&q=80');"></div>
+          <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-s3aDHKxHZSc?auto=format&fit=crop&w=1800&q=80');"></div>
         </div>
       </div>
+      <div class="hero-inner">
+        <p class="kicker" data-i18n="hero_kicker">For Working Mama | Late 20s to 40s</p>
+        <h1 class="slogan" data-i18n="hero_title">Efficiency meets Elegance.</h1>
+        <p class="sub" data-i18n="hero_sub">A one-screen decision flow: premium eye masks, science-backed supplements, and smart subscriptions.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#modules" data-i18n="hero_cta_1">Shop in 60s</a>
+          <a class="btn ghost" href="#science" data-i18n="hero_cta_2">See Transparency</a>
+        </div>
+      </div>
+      <aside class="hero-note">
+        <p class="hero-note-label" data-i18n="hero_note_label">Salon-like Curation</p>
+        <p class="hero-note-copy" data-i18n="hero_note_copy">Not a crowded catalog. Just the right picks for real schedules.</p>
+      </aside>
     </section>
 
-    <section id="modules" class="container">
-      <div class="section-head">
-        <h2>Three Curated Tracks</h2>
-        <p>你不需要浏览 100 个 SKU，只需要进入你的状态。</p>
+    <section class="container chapter" data-chapter="01">
+      <div class="section-head split-head">
+        <h2 data-i18n="concern_title">What are you dealing with today?</h2>
+        <p data-i18n="concern_sub">从问题出发，快速匹配你的恢复方案。</p>
       </div>
-      <div class="modules">
-        <article class="module reveal">
-          <h3>Deep Sleep | 深睡修复区</h3>
-          <p>优先修复睡眠质量：高遮光蚕丝眼罩、睡眠喷雾、降噪耳塞，针对碎片化休息场景。</p>
+      <div class="concern-grid">
+        <article class="concern-card"><h3 data-i18n="c1_t">Eye Fatigue</h3><p data-i18n="c1_d">Long screen hours and dry, tense eyes.</p></article>
+        <article class="concern-card"><h3 data-i18n="c2_t">Shallow Sleep</h3><p data-i18n="c2_d">Frequent wakeups and low recovery mornings.</p></article>
+        <article class="concern-card"><h3 data-i18n="c3_t">Energy Dip</h3><p data-i18n="c3_d">Midday crashes and unstable focus.</p></article>
+        <article class="concern-card"><h3 data-i18n="c4_t">Stress Build-up</h3><p data-i18n="c4_d">Body tension and emotional overload.</p></article>
+      </div>
+    </section>
+
+    <section id="modules" class="container chapter" data-chapter="02">
+      <div class="section-head split-head">
+        <h2 data-i18n="tracks_title">Three Curated Tracks</h2>
+        <p data-i18n="tracks_sub">No endless browsing. Choose your current need.</p>
+      </div>
+      <div class="modules editorial-grid">
+        <article class="module reveal tone-soft">
+          <h3 data-i18n="track_1_t">Deep Sleep | 深睡修复区</h3>
+          <p data-i18n="track_1_d">Blackout silk mask, sleep mist, and noise control for full-night quality.</p>
         </article>
-        <article class="module reveal">
-          <h3>Peak Energy | 能量巅峰区</h3>
-          <p>面向高负荷工作日：VC、NMN、钙镁片，支撑体力、专注与压力管理。</p>
+        <article class="module reveal tone-plain">
+          <h3 data-i18n="track_2_t">Peak Energy | 能量巅峰区</h3>
+          <p data-i18n="track_2_d">VC, TRU NIAGEN, and calcium-magnesium for stable daily output.</p>
         </article>
-        <article class="module reveal">
-          <h3>Working Mama's Kit | 职场妈妈专属包</h3>
-          <p>一键组合：夜间恢复 + 白天护眼 + 自动补货，减少“想买但没时间买”的决策损耗。</p>
+        <article class="module reveal tone-dark">
+          <h3 data-i18n="track_3_t">Working Mama's Kit | 职场妈妈包</h3>
+          <p data-i18n="track_3_d">Night recovery, daytime eye support, and automatic refill.</p>
         </article>
       </div>
     </section>
 
-    <section id="collections" class="container">
-      <div class="section-head">
-        <h2>The Curated Collections</h2>
-        <p>高端感、功能性、可信度，三者都要。</p>
+    <section id="collections" class="container chapter" data-chapter="03">
+      <div class="section-head split-head">
+        <h2 data-i18n="col_title">The Curated Collections</h2>
+        <p data-i18n="col_sub">Luxury feel, practical function, trusted sourcing.</p>
       </div>
-      <div class="collections-grid">
+      <div class="collections-grid editorial-grid">
         <article class="card reveal">
-          <h3>The Restoration | 修复系</h3>
-          <p>夜间恢复优先级最高，先把睡眠质量拉起来。</p>
+          <h3 data-i18n="r_title">The Restoration | 修复系</h3>
           <ul>
-            <li>Dore & Rose 蚕丝眼罩（主推）</li>
-            <li>睡眠喷雾（睡前 30 秒习惯）</li>
-            <li>降噪耳塞（出差 / 家庭双场景）</li>
+            <li data-i18n="r_1">Dore & Rose silk eye mask</li>
+            <li data-i18n="r_2">Sleep mist</li>
+            <li data-i18n="r_3">Noise-reduction earplugs</li>
+          </ul>
+        </article>
+        <article class="card reveal highlight-card">
+          <h3 data-i18n="v_title">The Vitality | 生命力系</h3>
+          <ul>
+            <li data-i18n="v_1">VC daily support</li>
+            <li data-i18n="v_2">TRU NIAGEN (NR)</li>
+            <li data-i18n="v_3">Calcium + Magnesium</li>
           </ul>
         </article>
         <article class="card reveal">
-          <h3>The Vitality | 生命力系</h3>
-          <p>为 late 20s 到 40s 的持续输出设计。</p>
+          <h3 data-i18n="s_title">The Visual Shield | 护眼系</h3>
           <ul>
-            <li>VC：日常抵抗力支持</li>
-            <li>NMN：线粒体能量支持（遵医嘱）</li>
-            <li>钙镁片：舒缓紧绷与压力疲劳</li>
+            <li data-i18n="s_1">Bilberry / Lutein</li>
+            <li data-i18n="s_2">Steam eye mask</li>
+            <li data-i18n="s_3">Blue-light protection item</li>
           </ul>
-        </article>
-        <article class="card reveal">
-          <h3>The Visual Shield | 护眼系</h3>
-          <p>屏幕时代的眼周与视疲劳管理。</p>
-          <ul>
-            <li>蓝莓 / 叶黄素配方</li>
-            <li>蒸汽眼罩（午后 15 分钟恢复）</li>
-            <li>防蓝光单品（办公室与通勤）</li>
-          </ul>
-        </article>
-      </div>
-      <p class="small">想要更详细的分组说明：查看 <a href="collections.html">Collections 页面</a>。</p>
-    </section>
-
-    <section id="journal" class="container">
-      <div class="section-head">
-        <h2>Founder's Journal | Leaf's Choice</h2>
-        <p>这个人群买的不只是产品，更是品味和信任。</p>
-      </div>
-      <div class="info-grid">
-        <article class="story-card">
-          <h3>你会看到的真实内容</h3>
-          <ul>
-            <li>眼罩遮光度亲测视频：强光、侧睡、晨光场景。</li>
-            <li>产后恢复体力补剂清单：真实周期与反馈。</li>
-            <li>职场女性心路：如何把“自我恢复”嵌入高压日程。</li>
-          </ul>
-          <div class="video-placeholder">Video Placeholder | 上传你的亲测短片</div>
-        </article>
-        <article class="info-card">
-          <h3>为什么有效</h3>
-          <p>当用户看到你自己在用、并且解释清楚“为什么选它”，转化会明显高于单纯商品堆叠。</p>
-          <ul class="checklist">
-            <li>30 秒短视频优先，减少阅读负担。</li>
-            <li>每篇只讲一个问题，避免信息过载。</li>
-            <li>每篇附一个可立即执行的清单。</li>
-          </ul>
-          <p class="small">查看更多：<a href="founder.html">Founder 页面</a></p>
         </article>
       </div>
     </section>
 
-    <section id="science" class="container">
-      <div class="section-head">
-        <h2>Science & Sourcing</h2>
-        <p>对 30-40 岁女性来说，透明度就是购买力。</p>
+    <section class="container chapter" data-chapter="04">
+      <div class="section-head split-head">
+        <h2 data-i18n="f_title">Why The Only Leaf</h2>
+        <p data-i18n="f_sub">像高端沙龙一样，只给你真正需要的步骤与产品。</p>
       </div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr><th>产品</th><th>关键成分</th><th>来源与认证</th><th>场景</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>VC Daily Support</td><td>抗坏血酸 + 缓释基底</td><td>日本制造 / 批次检测</td><td>换季与高压周期</td></tr>
-            <tr><td>NMN Focus Formula</td><td>β-NMN 高纯度</td><td>日本制造 / 第三方实验室</td><td>体力与专注支持</td></tr>
-            <tr><td>Calcium + Magnesium</td><td>钙镁复配</td><td>GMP 工厂 / 原料追溯</td><td>紧绷、疲劳、睡前舒缓</td></tr>
-          </tbody>
-        </table>
+      <div class="feature-grid">
+        <article class="feature-card"><span>01</span><h3 data-i18n="f1_t">Tailored Picks</h3><p data-i18n="f1_d">Personalized recommendations by life stage and schedule.</p></article>
+        <article class="feature-card"><span>02</span><h3 data-i18n="f2_t">Transparent Sourcing</h3><p data-i18n="f2_d">Ingredient list, origin, and safety documents in plain language.</p></article>
+        <article class="feature-card"><span>03</span><h3 data-i18n="f3_t">Subscription Simplicity</h3><p data-i18n="f3_d">Monthly autopilot with editable delivery and 10% off.</p></article>
       </div>
-      <p class="small">补剂信息用于科普，不替代医疗建议。完整说明见 <a href="science.html">Science 页面</a>。</p>
     </section>
 
-    <section class="container">
-      <div class="section-head">
-        <h2>Subscription | Lazy Mode for Smart Women</h2>
-        <p>忙的时候，最需要的是“自动正确”。</p>
+    <section id="journal" class="container chapter editorial-duo" data-chapter="05">
+      <article class="duo-main">
+        <h2 data-i18n="j_title">Founder's Journal | Leaf's Choice</h2>
+        <p data-i18n="j_sub">这个人群买的是“品味 + 信任”。</p>
+      </article>
+      <article class="duo-side">
+        <p data-i18n="j_quote">"When time is scarce, the right routine feels like luxury."</p>
+      </article>
+    </section>
+
+    <section id="science" class="container chapter" data-chapter="06">
+      <div class="section-head split-head">
+        <h2 data-i18n="sc_title">Science & Sourcing</h2>
+        <p data-i18n="sc_sub">For women in their 30s and 40s, transparency is purchasing power.</p>
       </div>
-      <div class="plans">
-        <article class="plan reveal">
-          <h3>Visual Reset</h3>
-          <p>蓝莓/叶黄素 + 蒸汽眼罩（月度）</p>
-          <div class="price">每月自动续送，享 9 折</div>
-        </article>
-        <article class="plan featured reveal">
-          <h3>Working Mama Core Kit</h3>
-          <p>蚕丝眼罩 + VC + 钙镁 + 蒸汽眼罩</p>
-          <div class="price">推荐组合，享 9 折 + 优先补货</div>
-        </article>
-        <article class="plan reveal">
-          <h3>Deep Recovery</h3>
-          <p>睡眠喷雾 + 降噪耳塞 + 夜间修复组合</p>
-          <div class="price">双月配送，享 9 折</div>
-        </article>
+      <div class="flow-grid">
+        <article class="flow-step"><span>1</span><h3 data-i18n="flow_1_t">Needs Check</h3><p data-i18n="flow_1_d">Sleep, energy, and eye-load assessment.</p></article>
+        <article class="flow-step"><span>2</span><h3 data-i18n="flow_2_t">Formula Match</h3><p data-i18n="flow_2_d">Pick from restoration, vitality, and visual shield.</p></article>
+        <article class="flow-step"><span>3</span><h3 data-i18n="flow_3_t">Safety Check</h3><p data-i18n="flow_3_d">Source traceability and third-party testing summary.</p></article>
+        <article class="flow-step"><span>4</span><h3 data-i18n="flow_4_t">Auto-Delivery</h3><p data-i18n="flow_4_d">Set and edit monthly shipping in one click.</p></article>
       </div>
-      <p><a class="btn solid" href="subscription.html">Start Subscription</a></p>
+    </section>
+
+    <section class="container chapter" data-chapter="07">
+      <div class="section-head split-head">
+        <h2 data-i18n="faq_title">FAQ</h2>
+        <p data-i18n="faq_sub">Quick answers for busy schedules.</p>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary data-i18n="faq_1_q">Who is this best for?</summary>
+          <p data-i18n="faq_1_a">Working women and moms in their late 20s to 40s who need fast, reliable wellness choices.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq_2_q">Can I use TRU NIAGEN with other supplements?</summary>
+          <p data-i18n="faq_2_a">Please check with your physician, especially if you are pregnant, nursing, or taking medication.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq_3_q">Can I pause subscription anytime?</summary>
+          <p data-i18n="faq_3_a">Yes. Pause, skip, and cancel options are all available before shipment.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="container chapter final-cta" data-chapter="08">
+      <div class="section-head split-head">
+        <h2 data-i18n="sub_title">Subscription | Lazy Mode for Smart Women</h2>
+        <p data-i18n="sub_sub">Busy life, fewer clicks, better recovery.</p>
+      </div>
+      <p><a class="btn solid" href="subscription.html" data-i18n="sub_cta">Start Subscription</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <small>© The Only Leaf | Curated Wellness for Working Women and Mothers</small>
+    <small data-i18n="footer">© The Only Leaf | Curated Wellness for Working Women and Mothers</small>
   </footer>
+
+  <script>
+    window.PAGE_I18N = {
+      zh: {
+        nav_start: '开始选品', nav_collections: '选品分类', nav_founder: '创始人专栏', nav_science: '科学背书', nav_subscribe: '订阅 9 折',
+        hero_kicker: '为职场妈妈与职场女性打造 | 20后期至40岁', hero_title: '当效率遇见优雅。', hero_sub: '一屏完成决策：高端眼罩、科学补剂与懒人订阅。',
+        hero_cta_1: '60秒快速选购', hero_cta_2: '查看透明背书', hero_note_label: '沙龙式精选', hero_note_copy: '不是大卖场式陈列，只保留真正有用的选择。',
+        concern_title: '你今天最困扰的问题是？', concern_sub: '从问题出发，快速匹配你的恢复方案。',
+        c1_t: '眼疲劳', c1_d: '长时间看屏幕，眼部干涩紧张。', c2_t: '浅睡眠', c2_d: '夜间易醒，早晨恢复感不足。', c3_t: '能量下滑', c3_d: '午后状态掉线，注意力不稳。', c4_t: '压力堆积', c4_d: '身体紧绷，情绪负荷偏高。',
+        tracks_title: '三大策展模块', tracks_sub: '不需要反复浏览，只需选择当前状态。',
+        track_1_t: 'Deep Sleep | 深睡修复区', track_1_d: '高遮光蚕丝眼罩、睡眠喷雾、降噪配件。',
+        track_2_t: 'Peak Energy | 能量巅峰区', track_2_d: 'VC、TRU NIAGEN、钙镁片，维持稳定输出。',
+        track_3_t: 'Working Mama\'s Kit | 职场妈妈包', track_3_d: '夜间修复 + 白天护眼 + 自动补货。',
+        col_title: '三大选品分类', col_sub: '高端感、实用性、可信度并行。',
+        r_title: 'The Restoration | 修复系', r_1: 'Dore & Rose 蚕丝眼罩', r_2: '睡眠喷雾', r_3: '降噪耳塞',
+        v_title: 'The Vitality | 生命力系', v_1: 'VC 日常支持', v_2: 'TRU NIAGEN (NR)', v_3: '钙镁片',
+        s_title: 'The Visual Shield | 护眼系', s_1: '蓝莓 / 叶黄素', s_2: '蒸汽眼罩', s_3: '防蓝光单品',
+        f_title: '为什么是 The Only Leaf', f_sub: '像高端沙龙一样，只给你真正需要的步骤与产品。',
+        f1_t: '定制化选品', f1_d: '按人生阶段与作息推荐，不盲目堆品。', f2_t: '透明溯源', f2_d: '成分、产地、检测信息清晰可读。', f3_t: '订阅简化', f3_d: '自动配送可随时调整，默认享折扣。',
+        j_title: '创始人专栏 | Leaf\'s Choice', j_sub: '这个人群买的是“品味 + 信任”。', j_quote: '"当时间稀缺时，正确的日常就是奢侈品。"',
+        sc_title: '科学背书与溯源', sc_sub: '对30-40岁女性来说，透明度就是购买力。',
+        flow_1_t: '需求评估', flow_1_d: '睡眠、能量、护眼负荷快速判断。', flow_2_t: '配方匹配', flow_2_d: '从修复、生命力、护眼三线选择。', flow_3_t: '安全核验', flow_3_d: '来源追溯与第三方检测摘要。', flow_4_t: '自动配送', flow_4_d: '一键设置并随时调整发货。',
+        faq_title: '常见问题', faq_sub: '给忙碌日程的快速回答。', faq_1_q: '适合哪些人群？', faq_1_a: '适合 20 后期到 40 岁职场女性与职场妈妈，想快速做出可靠选品决策的人群。', faq_2_q: 'TRU NIAGEN 能和其他补剂一起吃吗？', faq_2_a: '建议先咨询医生，尤其是孕期、哺乳期或正在用药时。', faq_3_q: '订阅可以随时暂停吗？', faq_3_a: '可以。发货前支持暂停、跳过和取消。',
+        sub_title: '订阅 | 聪明女性的懒人模式', sub_sub: '生活越忙，越需要自动正确。', sub_cta: '开启订阅',
+        footer: '© The Only Leaf | 为职场女性与妈妈策展的健康选品'
+      },
+      en: {
+        nav_start: 'Start Here', nav_collections: 'Collections', nav_founder: 'Founder', nav_science: 'Science', nav_subscribe: 'Subscribe 10% Off',
+        hero_kicker: 'For Working Mama | Late 20s to 40s', hero_title: 'Efficiency meets Elegance.', hero_sub: 'A one-screen decision flow: premium eye masks, science-backed supplements, and smart subscriptions.',
+        hero_cta_1: 'Shop in 60s', hero_cta_2: 'See Transparency', hero_note_label: 'Salon-like Curation', hero_note_copy: 'Not a crowded catalog. Just the right picks for real schedules.',
+        concern_title: 'What are you dealing with today?', concern_sub: 'Start from the concern, then match the right plan.',
+        c1_t: 'Eye Fatigue', c1_d: 'Long screen hours and dry, tense eyes.', c2_t: 'Shallow Sleep', c2_d: 'Frequent wakeups and low recovery mornings.', c3_t: 'Energy Dip', c3_d: 'Midday crashes and unstable focus.', c4_t: 'Stress Build-up', c4_d: 'Body tension and emotional overload.',
+        tracks_title: 'Three Curated Tracks', tracks_sub: 'No endless browsing. Choose your current need.',
+        track_1_t: 'Deep Sleep', track_1_d: 'Blackout silk mask, sleep mist, and noise control for full-night quality.',
+        track_2_t: 'Peak Energy', track_2_d: 'VC, TRU NIAGEN, and calcium-magnesium for stable daily output.',
+        track_3_t: 'Working Mama\'s Kit', track_3_d: 'Night recovery, daytime eye support, and automatic refill.',
+        col_title: 'The Curated Collections', col_sub: 'Luxury feel, practical function, trusted sourcing.',
+        r_title: 'The Restoration', r_1: 'Dore & Rose silk eye mask', r_2: 'Sleep mist', r_3: 'Noise-reduction earplugs',
+        v_title: 'The Vitality', v_1: 'VC daily support', v_2: 'TRU NIAGEN (NR)', v_3: 'Calcium + Magnesium',
+        s_title: 'The Visual Shield', s_1: 'Bilberry / Lutein', s_2: 'Steam eye mask', s_3: 'Blue-light protection item',
+        f_title: 'Why The Only Leaf', f_sub: 'Like a premium salon, we keep only what truly matters.',
+        f1_t: 'Tailored Picks', f1_d: 'Personalized recommendations by life stage and schedule.', f2_t: 'Transparent Sourcing', f2_d: 'Ingredient list, origin, and safety documents in plain language.', f3_t: 'Subscription Simplicity', f3_d: 'Monthly autopilot with editable delivery and 10% off.',
+        j_title: 'Founder\'s Journal | Leaf\'s Choice', j_sub: 'This audience buys taste and trust.', j_quote: '"When time is scarce, the right routine feels like luxury."',
+        sc_title: 'Science & Sourcing', sc_sub: 'For women in their 30s and 40s, transparency is purchasing power.',
+        flow_1_t: 'Needs Check', flow_1_d: 'Sleep, energy, and eye-load assessment.', flow_2_t: 'Formula Match', flow_2_d: 'Pick from restoration, vitality, and visual shield.', flow_3_t: 'Safety Check', flow_3_d: 'Source traceability and third-party testing summary.', flow_4_t: 'Auto-Delivery', flow_4_d: 'Set and edit monthly shipping in one click.',
+        faq_title: 'FAQ', faq_sub: 'Quick answers for busy schedules.', faq_1_q: 'Who is this best for?', faq_1_a: 'Working women and moms in their late 20s to 40s who need fast, reliable wellness choices.', faq_2_q: 'Can I use TRU NIAGEN with other supplements?', faq_2_a: 'Please check with your physician, especially if you are pregnant, nursing, or taking medication.', faq_3_q: 'Can I pause subscription anytime?', faq_3_a: 'Yes. Pause, skip, and cancel options are all available before shipment.',
+        sub_title: 'Subscription | Lazy Mode for Smart Women', sub_sub: 'Busy life, fewer clicks, better recovery.', sub_cta: 'Start Subscription',
+        footer: '© The Only Leaf | Curated Wellness for Working Women and Mothers'
+      },
+      ja: {
+        nav_start: 'はじめに', nav_collections: 'コレクション', nav_founder: 'Founder', nav_science: '科学情報', nav_subscribe: '定期便 10%OFF',
+        hero_kicker: '働くママ・働く女性向け | 20代後半から40代', hero_title: 'Efficiency meets Elegance.', hero_sub: '高級アイマスク、科学的サプリ、定期便を1画面で判断できる導線。',
+        hero_cta_1: '60秒で選ぶ', hero_cta_2: '透明性を見る', hero_note_label: 'サロン型キュレーション', hero_note_copy: '商品を並べすぎず、必要な選択だけを残します。',
+        concern_title: '今日の悩みは何ですか？', concern_sub: '悩み起点で、最短で最適なプランへ。',
+        c1_t: '目の疲れ', c1_d: '長時間の画面作業で目が乾く・重い。', c2_t: '浅い睡眠', c2_d: '途中で目覚めやすく回復感が低い。', c3_t: 'エネルギー低下', c3_d: '午後に集中力と体力が落ちる。', c4_t: 'ストレス蓄積', c4_d: '体の緊張とメンタル負荷が続く。',
+        tracks_title: '3つのキュレーショントラック', tracks_sub: '迷わず、今の状態から選ぶだけ。',
+        track_1_t: 'Deep Sleep', track_1_d: '遮光シルクマスク、スリープミスト、ノイズ対策。',
+        track_2_t: 'Peak Energy', track_2_d: 'VC・TRU NIAGEN・カルシウム+マグネシウムで安定出力。',
+        track_3_t: 'Working Mama\'s Kit', track_3_d: '夜回復・日中の目ケア・自動補充を1つに。',
+        col_title: 'キュレーションコレクション', col_sub: '高級感、実用性、信頼性を同時に。',
+        r_title: 'The Restoration', r_1: 'Dore & Rose シルクアイマスク', r_2: 'スリープミスト', r_3: 'ノイズ低減耳栓',
+        v_title: 'The Vitality', v_1: 'VC デイリーサポート', v_2: 'TRU NIAGEN (NR)', v_3: 'カルシウム + マグネシウム',
+        s_title: 'The Visual Shield', s_1: 'ビルベリー / ルテイン', s_2: '蒸気アイマスク', s_3: 'ブルーライト対策アイテム',
+        f_title: 'The Only Leaf が選ばれる理由', f_sub: 'プレミアムサロンのように、本当に必要なものだけを提案。',
+        f1_t: '最適化された提案', f1_d: 'ライフステージと生活リズムに合わせて選定。', f2_t: '透明な原料情報', f2_d: '成分・産地・安全情報を分かりやすく提示。', f3_t: '簡単な定期便', f3_d: '配送をいつでも調整でき、常時10%OFF。',
+        j_title: 'Founder\'s Journal | Leaf\'s Choice', j_sub: 'この層が買うのは「信頼と審美性」です。', j_quote: '"時間が足りないほど、正しい習慣はラグジュアリーになる。"',
+        sc_title: '科学情報と原料開示', sc_sub: '30-40代女性にとって、透明性は購買力です。',
+        flow_1_t: '状態チェック', flow_1_d: '睡眠・体力・目の負荷を確認。', flow_2_t: '配合マッチ', flow_2_d: '修復・生命力・護眼から選択。', flow_3_t: '安全性確認', flow_3_d: 'トレーサビリティと第三者検査を確認。', flow_4_t: '自動配送', flow_4_d: 'ワンクリック設定、いつでも変更可能。',
+        faq_title: 'FAQ', faq_sub: '忙しい方向けのクイック回答。', faq_1_q: 'どんな人に向いていますか？', faq_1_a: '20代後半から40代の働く女性・働くママで、短時間で信頼できる選択をしたい方。', faq_2_q: 'TRU NIAGENは他サプリと併用できますか？', faq_2_a: '妊娠中・授乳中・服薬中の方は、必ず医師にご相談ください。', faq_3_q: '定期便はいつでも停止できますか？', faq_3_a: 'はい。発送前なら一時停止・スキップ・解約が可能です。',
+        sub_title: '定期便 | 忙しい女性のためのラク設計', sub_sub: '忙しいほど、クリックは少なく。回復はしっかり。', sub_cta: '定期便を始める',
+        footer: '© The Only Leaf | 働く女性とママのためのキュレーション'
+      }
+    };
+  </script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

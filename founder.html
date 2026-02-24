@@ -4,52 +4,89 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Founder | The Only Leaf</title>
-  <meta name="description" content="Founder’s Journal：真实测评、恢复清单与职场女性心路。" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">The Only Leaf</a>
-    <nav class="nav">
-      <a href="index.html#modules">Start Here</a>
-      <a href="collections.html">Collections</a>
-      <a href="founder.html">Founder</a>
-      <a href="science.html">Science</a>
-      <a href="subscription.html" class="cta">Subscribe 9折</a>
-    </nav>
+    <div class="header-right">
+      <nav class="nav">
+        <a href="index.html#modules" data-i18n="nav_start">Start Here</a>
+        <a href="collections.html" data-i18n="nav_collections">Collections</a>
+        <a href="founder.html" data-i18n="nav_founder">Founder</a>
+        <a href="science.html" data-i18n="nav_science">Science</a>
+        <a href="subscription.html" class="cta" data-i18n="nav_subscribe">Subscribe 9折</a>
+      </nav>
+      <div class="lang-switch">
+        <label class="sr-only" for="lang-select">Language</label>
+        <select id="lang-select" class="lang-select" data-lang-select>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+    </div>
   </header>
 
-  <main class="container">
-    <div class="section-head">
-      <h1>Founder's Journal | Leaf's Choice</h1>
-      <p>你看到的每一个推荐，都来自真实使用而不是品牌广告词。</p>
-    </div>
+  <main>
+    <section class="container chapter editorial-duo" data-chapter="01">
+      <article class="duo-main">
+        <h1 data-i18n="title">Founder's Journal | Leaf's Choice</h1>
+        <p data-i18n="sub">Trust is built with specific tests, not marketing slogans.</p>
+      </article>
+      <article class="duo-side">
+        <p data-i18n="quote">"I only recommend what survives my real schedule."</p>
+      </article>
+    </section>
 
-    <article class="story-card">
-      <h2>01. 眼罩遮光度亲测视频</h2>
-      <p>场景：清晨自然光、办公室午休、侧睡翻身。重点比较遮光、贴合、醒来压痕。</p>
-      <div class="video-placeholder">Video Placeholder | 建议上传 45 秒竖屏短视频</div>
-    </article>
+    <section class="container chapter" data-chapter="02">
+      <div class="section-head split-head">
+        <h2 data-i18n="method_title">How I Review</h2>
+        <p data-i18n="method_sub">A consistent framework to keep recommendations honest.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span>01</span><h3 data-i18n="m1_t">Use Test</h3><p data-i18n="m1_d">Morning, office nap, and side-sleep scenarios.</p></article>
+        <article class="feature-card"><span>02</span><h3 data-i18n="m2_t">Body Feedback</h3><p data-i18n="m2_d">Pressure marks, comfort, and recovery feeling.</p></article>
+        <article class="feature-card"><span>03</span><h3 data-i18n="m3_t">Repurchase Check</h3><p data-i18n="m3_d">If I will not reorder, it does not stay.</p></article>
+      </div>
+    </section>
 
-    <article class="card">
-      <h2>02. 产后恢复体力补剂清单</h2>
-      <ul>
-        <li>VC：优先维持基础状态与抵抗力。</li>
-        <li>钙镁：放松和睡前恢复环节。</li>
-        <li>NMN：在专业建议下评估使用。</li>
-      </ul>
-      <p class="small">建议发布真实周期记录：第 1 周 / 第 4 周 / 第 8 周感受。</p>
-    </article>
-
-    <article class="card">
-      <h2>03. 职场女性的心路历程</h2>
-      <p>核心观点：高效并不等于持续透支。真正可持续的状态，来自可执行的恢复系统。</p>
-      <p>推荐写法：每篇只讲一个问题，例如“如何在 10 分钟内进入可休息状态”。</p>
-    </article>
+    <section class="container chapter" data-chapter="03">
+      <div class="section-head split-head">
+        <h2 data-i18n="entry_title">Latest Entries</h2>
+        <p data-i18n="entry_sub">Short, practical notes made for busy women.</p>
+      </div>
+      <div class="collections-grid">
+        <article class="story-card">
+          <h3 data-i18n="e1_t">Blackout Eye Mask Test</h3>
+          <p data-i18n="e1_d">Comparing light-blocking and side-sleep fit across real settings.</p>
+          <div class="video-placeholder" data-i18n="e1_v">Video placeholder | 45-second vertical clip</div>
+        </article>
+        <article class="card">
+          <h3 data-i18n="e2_t">Postpartum Recovery Stack</h3>
+          <ul>
+            <li data-i18n="e2_1">VC for daily baseline</li>
+            <li data-i18n="e2_2">TRU NIAGEN for metabolic support</li>
+            <li data-i18n="e2_3">Calcium + Magnesium for night relaxation</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3 data-i18n="e3_t">Workday Reset Routine</h3>
+          <p data-i18n="e3_d">A 10-minute protocol that protects output without overloading your day.</p>
+        </article>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <small>Trust is built with specifics.</small>
-  </footer>
+  <footer class="site-footer"><small data-i18n="footer">Specifics build trust.</small></footer>
+
+  <script>
+    window.PAGE_I18N = {
+      zh:{nav_start:'开始选品',nav_collections:'选品分类',nav_founder:'创始人专栏',nav_science:'科学背书',nav_subscribe:'订阅 9 折',title:'创始人专栏 | Leaf\'s Choice',sub:'信任来自具体测试，而不是营销词。',quote:'"我只推荐能在真实生活节奏里存活下来的产品。"',method_title:'我的测评方法',method_sub:'固定框架，保证推荐可复核。',m1_t:'使用场景测试',m1_d:'清晨、午休、侧睡三类场景。',m2_t:'身体反馈记录',m2_d:'压痕、舒适度与恢复感。',m3_t:'复购判断',m3_d:'如果我不会复购，它就不应该在清单里。',entry_title:'最新内容',entry_sub:'短而实用，给忙碌女性看的笔记。',e1_t:'眼罩遮光实测',e1_d:'对比不同环境下的遮光与侧睡贴合。',e1_v:'视频占位 | 建议45秒竖屏短片',e2_t:'产后恢复补剂清单',e2_1:'VC 维持基础状态',e2_2:'TRU NIAGEN 代谢支持',e2_3:'钙镁片 睡前放松',e3_t:'工作日重启流程',e3_d:'10分钟恢复流程，在不增加负担的前提下稳住输出。',footer:'具体细节建立信任。'},
+      en:{nav_start:'Start Here',nav_collections:'Collections',nav_founder:'Founder',nav_science:'Science',nav_subscribe:'Subscribe 10% Off',title:'Founder\'s Journal | Leaf\'s Choice',sub:'Trust is built with specific tests, not marketing slogans.',quote:'"I only recommend what survives my real schedule."',method_title:'How I Review',method_sub:'A consistent framework to keep recommendations honest.',m1_t:'Use Test',m1_d:'Morning, office nap, and side-sleep scenarios.',m2_t:'Body Feedback',m2_d:'Pressure marks, comfort, and recovery feeling.',m3_t:'Repurchase Check',m3_d:'If I will not reorder, it does not stay.',entry_title:'Latest Entries',entry_sub:'Short, practical notes made for busy women.',e1_t:'Blackout Eye Mask Test',e1_d:'Comparing light-blocking and side-sleep fit across real settings.',e1_v:'Video placeholder | 45-second vertical clip',e2_t:'Postpartum Recovery Stack',e2_1:'VC for daily baseline',e2_2:'TRU NIAGEN for metabolic support',e2_3:'Calcium + Magnesium for night relaxation',e3_t:'Workday Reset Routine',e3_d:'A 10-minute protocol that protects output without overloading your day.',footer:'Specifics build trust.'},
+      ja:{nav_start:'はじめに',nav_collections:'コレクション',nav_founder:'Founder',nav_science:'科学情報',nav_subscribe:'定期便 10%OFF',title:'Founder\'s Journal | Leaf\'s Choice',sub:'信頼は広告文ではなく、具体的な検証で生まれる。',quote:'"実生活で続かないものは推薦しない。"',method_title:'レビュー方法',method_sub:'一貫した基準で推薦の透明性を担保。',m1_t:'使用テスト',m1_d:'朝・オフィス仮眠・横向き寝を検証。',m2_t:'身体反応',m2_d:'跡、快適性、回復感を記録。',m3_t:'再購入判断',m3_d:'自分が再購入しないなら掲載しない。',entry_title:'最新エントリー',entry_sub:'忙しい女性向けの短く実用的な記録。',e1_t:'遮光アイマスク実測',e1_d:'実環境で遮光性とフィット感を比較。',e1_v:'動画プレースホルダー | 45秒縦動画',e2_t:'産後リカバリー補助',e2_1:'VCで日常ベース維持',e2_2:'TRU NIAGENで代謝サポート',e2_3:'カルシウム+マグネシウムで夜の緩和',e3_t:'仕事日のリセット習慣',e3_d:'負担を増やさずに出力を守る10分ルーティン。',footer:'具体性が信頼をつくる。'}
+    };
+  </script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

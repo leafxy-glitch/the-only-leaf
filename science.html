@@ -4,59 +4,79 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Science & Sourcing | The Only Leaf</title>
-  <meta name="description" content="The Only Leaf 成分、产地、检测与安全信息透明公开。" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">The Only Leaf</a>
-    <nav class="nav">
-      <a href="index.html#modules">Start Here</a>
-      <a href="collections.html">Collections</a>
-      <a href="founder.html">Founder</a>
-      <a href="science.html">Science</a>
-      <a href="subscription.html" class="cta">Subscribe 9折</a>
-    </nav>
+    <div class="header-right">
+      <nav class="nav">
+        <a href="index.html#modules" data-i18n="nav_start">Start Here</a>
+        <a href="collections.html" data-i18n="nav_collections">Collections</a>
+        <a href="founder.html" data-i18n="nav_founder">Founder</a>
+        <a href="science.html" data-i18n="nav_science">Science</a>
+        <a href="subscription.html" class="cta" data-i18n="nav_subscribe">Subscribe 9折</a>
+      </nav>
+      <div class="lang-switch">
+        <label class="sr-only" for="lang-select">Language</label>
+        <select id="lang-select" class="lang-select" data-lang-select>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="zh">中文</option>
+        </select>
+      </div>
+    </div>
   </header>
 
-  <main class="container">
-    <div class="section-head">
-      <h1>Science & Sourcing</h1>
-      <p>对于 30-40 岁女性，真正重要的是“成分说得清、来源查得到、风险讲明白”。</p>
-    </div>
-
-    <section class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>产品</th><th>主要成分</th><th>产地 / 制造</th><th>检测与认证</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>VC Daily Support</td><td>抗坏血酸 + 缓释基底</td><td>日本制造</td><td>批次 COA + 微生物检测</td></tr>
-          <tr><td>NMN Focus Formula</td><td>β-NMN 高纯度</td><td>日本制造</td><td>第三方纯度检测</td></tr>
-          <tr><td>Calcium + Magnesium</td><td>钙镁复配</td><td>欧盟原料 / GMP 工厂</td><td>重金属与稳定性检测</td></tr>
-          <tr><td>Silk Eye Mask</td><td>Mulberry Silk 6A</td><td>可追溯面料来源</td><td>材质安全检测报告</td></tr>
-        </tbody>
-      </table>
+  <main>
+    <section class="container chapter" data-chapter="01">
+      <div class="section-head split-head">
+        <h1 data-i18n="title">Science & Sourcing</h1>
+        <p data-i18n="sub">Transparency is the core of high-trust wellness.</p>
+      </div>
+      <div class="flow-grid">
+        <article class="flow-step"><span>1</span><h3 data-i18n="f1_t">Ingredient</h3><p data-i18n="f1_d">Full key ingredients listed in plain language.</p></article>
+        <article class="flow-step"><span>2</span><h3 data-i18n="f2_t">Origin</h3><p data-i18n="f2_d">Manufacturing region and supplier context.</p></article>
+        <article class="flow-step"><span>3</span><h3 data-i18n="f3_t">Testing</h3><p data-i18n="f3_d">Third-party reports and batch-level checks.</p></article>
+        <article class="flow-step"><span>4</span><h3 data-i18n="f4_t">Usage Note</h3><p data-i18n="f4_d">Simple safety reminders by scenario.</p></article>
+      </div>
     </section>
 
-    <section class="info-grid">
-      <article class="info-card">
-        <h3>我们公开什么</h3>
-        <ul>
-          <li>完整配方和剂量范围</li>
-          <li>原料来源与制造国家</li>
-          <li>第三方检测摘要与批号</li>
-        </ul>
-      </article>
-      <article class="info-card">
-        <h3>安全说明</h3>
-        <p>补剂不替代药物或医疗建议。孕期、哺乳期、慢性病或正在用药人群，请先咨询医生。</p>
-      </article>
+    <section class="container chapter" data-chapter="02">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th data-i18n="h1">Product</th><th data-i18n="h2">Key Ingredient</th><th data-i18n="h3">Origin / Testing</th></tr></thead>
+          <tbody>
+            <tr><td data-i18n="p1">VC Daily Support</td><td data-i18n="p1i">Ascorbic acid + sustained-release base</td><td data-i18n="p1o">Made in Japan / batch tested</td></tr>
+            <tr><td data-i18n="p2">TRU NIAGEN</td><td data-i18n="p2i">Nicotinamide Riboside (NR)</td><td data-i18n="p2o">US brand / third-party tested</td></tr>
+            <tr><td data-i18n="p3">Calcium + Magnesium</td><td data-i18n="p3i">Calcium-magnesium complex</td><td data-i18n="p3o">GMP facility / traceable sourcing</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="container chapter" data-chapter="03">
+      <div class="section-head split-head">
+        <h2 data-i18n="faq_title">Safety Notes</h2>
+        <p data-i18n="faq_sub">Clear guidance before purchase.</p>
+      </div>
+      <div class="faq-list">
+        <details><summary data-i18n="q1">Can I combine multiple supplements?</summary><p data-i18n="a1">Please consult your physician for personal combinations.</p></details>
+        <details><summary data-i18n="q2">Who should be extra careful?</summary><p data-i18n="a2">Pregnant or nursing users, chronic conditions, and medication users.</p></details>
+        <details><summary data-i18n="q3">Do you show testing details?</summary><p data-i18n="a3">Yes, we display key testing and sourcing summaries for each line.</p></details>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <small>Transparency first, always.</small>
-  </footer>
+  <footer class="site-footer"><small data-i18n="footer">Transparency first, always.</small></footer>
+
+  <script>
+    window.PAGE_I18N = {
+      zh:{nav_start:'开始选品',nav_collections:'选品分类',nav_founder:'创始人专栏',nav_science:'科学背书',nav_subscribe:'订阅 9 折',title:'科学背书与溯源',sub:'高信任健康选品的核心是透明度。',f1_t:'成分',f1_d:'关键成分用直白语言完整公开。',f2_t:'产地',f2_d:'标注制造地区与供应背景。',f3_t:'检测',f3_d:'提供第三方检测与批次校验。',f4_t:'使用提示',f4_d:'按场景给出清晰安全提醒。',h1:'产品',h2:'关键成分',h3:'产地/检测',p1:'VC Daily Support',p1i:'抗坏血酸 + 缓释基底',p1o:'日本制造 / 批次检测',p2:'TRU NIAGEN',p2i:'烟酰胺核糖（NR）',p2o:'美国品牌 / 第三方检测',p3:'Calcium + Magnesium',p3i:'钙镁复配',p3o:'GMP 工厂 / 原料追溯',faq_title:'安全提示',faq_sub:'购买前必须清楚的要点。',q1:'补剂可以叠加使用吗？',a1:'具体组合建议先咨询医生。',q2:'哪些人群要更谨慎？',a2:'孕期、哺乳期、慢性病或正在用药人群。',q3:'会展示检测信息吗？',a3:'会。每条产品线都会展示核心检测与来源摘要。',footer:'透明度优先，始终如此。'},
+      en:{nav_start:'Start Here',nav_collections:'Collections',nav_founder:'Founder',nav_science:'Science',nav_subscribe:'Subscribe 10% Off',title:'Science & Sourcing',sub:'Transparency is the core of high-trust wellness.',f1_t:'Ingredient',f1_d:'Full key ingredients listed in plain language.',f2_t:'Origin',f2_d:'Manufacturing region and supplier context.',f3_t:'Testing',f3_d:'Third-party reports and batch-level checks.',f4_t:'Usage Note',f4_d:'Simple safety reminders by scenario.',h1:'Product',h2:'Key Ingredient',h3:'Origin / Testing',p1:'VC Daily Support',p1i:'Ascorbic acid + sustained-release base',p1o:'Made in Japan / batch tested',p2:'TRU NIAGEN',p2i:'Nicotinamide Riboside (NR)',p2o:'US brand / third-party tested',p3:'Calcium + Magnesium',p3i:'Calcium-magnesium complex',p3o:'GMP facility / traceable sourcing',faq_title:'Safety Notes',faq_sub:'Clear guidance before purchase.',q1:'Can I combine multiple supplements?',a1:'Please consult your physician for personal combinations.',q2:'Who should be extra careful?',a2:'Pregnant or nursing users, chronic conditions, and medication users.',q3:'Do you show testing details?',a3:'Yes, we display key testing and sourcing summaries for each line.',footer:'Transparency first, always.'},
+      ja:{nav_start:'はじめに',nav_collections:'コレクション',nav_founder:'Founder',nav_science:'科学情報',nav_subscribe:'定期便 10%OFF',title:'科学情報と原料開示',sub:'高信頼ウェルネスの中心は透明性。',f1_t:'成分',f1_d:'主要成分を分かりやすく開示。',f2_t:'産地',f2_d:'製造地域と供給背景を提示。',f3_t:'検査',f3_d:'第三者検査とロット確認を実施。',f4_t:'使用注意',f4_d:'シーン別に安全情報を整理。',h1:'製品',h2:'主要成分',h3:'産地/検査',p1:'VC Daily Support',p1i:'アスコルビン酸 + 徐放性基材',p1o:'日本製造 / ロット検査',p2:'TRU NIAGEN',p2i:'ニコチンアミドリボシド（NR）',p2o:'米国ブランド / 第三者検査',p3:'Calcium + Magnesium',p3i:'カルシウム+マグネシウム配合',p3o:'GMP工場 / 原料トレーサビリティ',faq_title:'安全ガイド',faq_sub:'購入前に確認すべき要点。',q1:'サプリを併用できますか？',a1:'組み合わせは医師へ相談してください。',q2:'注意が必要な人は？',a2:'妊娠中・授乳中・慢性疾患・服薬中の方。',q3:'検査情報は公開されますか？',a3:'はい。各ラインで検査と原料情報を公開します。',footer:'透明性を最優先に。'}
+    };
+  </script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
