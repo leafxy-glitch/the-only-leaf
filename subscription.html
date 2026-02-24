@@ -10,66 +10,223 @@
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">The Only Leaf</a>
-    <nav class="nav">
-      <a href="index.html#modules">Start Here</a>
-      <a href="collections.html">Collections</a>
-      <a href="founder.html">Founder</a>
-      <a href="science.html">Science</a>
-      <a href="subscription.html" class="cta">Subscribe 9折</a>
-    </nav>
+    <div class="header-right">
+      <nav class="nav">
+        <a href="index.html#modules" data-i18n="nav_start">Start Here</a>
+        <a href="collections.html" data-i18n="nav_collections">Collections</a>
+        <a href="founder.html" data-i18n="nav_founder">Founder</a>
+        <a href="science.html" data-i18n="nav_science">Science</a>
+        <a href="subscription.html" class="cta" data-i18n="nav_subscribe">Subscribe 9折</a>
+      </nav>
+      <div class="lang-switch">
+        <label class="sr-only" for="lang-select">Language</label>
+        <select id="lang-select" class="lang-select" data-lang-select>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="zh-CN">中文</option>
+        </select>
+      </div>
+    </div>
   </header>
+
+  <section class="mini-hero">
+    <div class="mini-hero-inner">
+      <p class="kicker" data-i18n="hero_kicker">Smart Subscription</p>
+      <h1 class="slogan" data-i18n="hero_title">Less Mental Load, Better Recovery</h1>
+    </div>
+  </section>
 
   <main class="container">
     <div class="section-head">
-      <h1>Subscription | 懒人模式</h1>
-      <p>为没时间反复下单的 Working Mama 设计：固定节奏自动配送，默认享 9 折。</p>
+      <p data-i18n="intro">Designed for busy working mamas: fixed rhythm auto-delivery with 9% savings.</p>
     </div>
 
     <section class="plans">
       <article class="plan">
-        <h3>Visual Reset Plan</h3>
-        <p>蓝莓 / 叶黄素 + 蒸汽眼罩</p>
+        <h3 data-i18n="p1_t">Visual Reset Plan</h3>
+        <p data-i18n="p1_d">Bilberry/Lutein + steam eye mask</p>
         <ul>
-          <li>每月配送</li>
-          <li>适合高屏幕工作强度</li>
-          <li>默认 9 折</li>
+          <li data-i18n="p1_1">Monthly delivery</li>
+          <li data-i18n="p1_2">Best for screen-heavy workdays</li>
+          <li data-i18n="p1_3">9% off by default</li>
         </ul>
       </article>
 
       <article class="plan featured">
-        <h3>Working Mama Core Kit</h3>
-        <p>蚕丝眼罩 + VC + 钙镁 + 蒸汽眼罩</p>
+        <h3 data-i18n="p2_t">Working Mama Core Kit</h3>
+        <p data-i18n="p2_d">Silk mask + VC + TRU NIAGEN + Calcium/Magnesium + steam eye mask</p>
         <ul>
-          <li>每月配送</li>
-          <li>夜间修复 + 白天状态管理</li>
-          <li>默认 9 折 + 优先库存</li>
+          <li data-i18n="p2_1">Monthly delivery</li>
+          <li data-i18n="p2_2">Night recovery + daytime support</li>
+          <li data-i18n="p2_3">9% off + priority stock</li>
         </ul>
       </article>
 
       <article class="plan">
-        <h3>Deep Recovery Plan</h3>
-        <p>睡眠喷雾 + 降噪耳塞 + 夜间修复品</p>
+        <h3 data-i18n="p3_t">Deep Recovery Plan</h3>
+        <p data-i18n="p3_d">Sleep mist + earplugs + night recovery essentials</p>
         <ul>
-          <li>双月配送</li>
-          <li>适合睡眠质量波动周期</li>
-          <li>默认 9 折</li>
+          <li data-i18n="p3_1">Every two months</li>
+          <li data-i18n="p3_2">For fluctuating sleep quality periods</li>
+          <li data-i18n="p3_3">9% off by default</li>
         </ul>
       </article>
     </section>
 
     <section class="card">
-      <h2>订阅规则</h2>
+      <h2 data-i18n="rule_t">Subscription Rules</h2>
       <ul>
-        <li>随时可暂停、跳过或取消，不设复杂门槛。</li>
-        <li>发货前 3 天提醒，避免堆货。</li>
-        <li>支持主流信用卡和后续 Stripe/Shopify 接入。</li>
+        <li data-i18n="rule_1">Pause, skip, or cancel anytime without complex conditions.</li>
+        <li data-i18n="rule_2">3-day shipping reminder before each cycle.</li>
+        <li data-i18n="rule_3">Supports major credit cards and future Stripe/Shopify integration.</li>
       </ul>
-      <p><a class="btn solid" href="#">开始订阅（支付接入占位）</a></p>
+      <p><a class="btn solid" href="#" data-i18n="rule_cta">Start Subscription (payment placeholder)</a></p>
+    </section>
+
+    <section class="container" style="padding-left:0;padding-right:0;">
+      <div class="section-head">
+        <h2 data-i18n="faq_title">FAQ</h2>
+        <p data-i18n="faq_sub">Quick answers for subscription decisions.</p>
+      </div>
+      <div class="faq-list">
+        <details><summary data-i18n="faq_1_q">Can I pause anytime?</summary><p data-i18n="faq_1_a">Yes, pause and resume are available before shipment.</p></details>
+        <details><summary data-i18n="faq_2_q">Can I switch products in my plan?</summary><p data-i18n="faq_2_a">Yes, edit line items before your renewal date.</p></details>
+        <details><summary data-i18n="faq_3_q">Is there a long-term contract?</summary><p data-i18n="faq_3_a">No fixed contract. You keep full control.</p></details>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <small>Smart routines save mental load.</small>
+    <small data-i18n="footer">Smart routines save mental load.</small>
   </footer>
+
+  <script>
+    window.PAGE_I18N = {
+    "zh-CN": {
+        "_meta_title": "Subscription | The Only Leaf",
+        "_meta_description": "懒人模式订阅：自动配送、灵活暂停与9折优惠，为忙碌女性减少心智负担。",
+        "nav_start": "开始选品",
+        "nav_collections": "选品分类",
+        "nav_founder": "创始人专栏",
+        "nav_science": "科学背书",
+        "nav_subscribe": "订阅 9 折",
+        "hero_kicker": "智能订阅",
+        "hero_title": "更少心智负担，更好恢复",
+        "intro": "为忙碌职场妈妈设计：固定节奏自动配送，默认享 9 折。",
+        "p1_t": "Visual Reset Plan",
+        "p1_d": "蓝莓/叶黄素 + 蒸汽眼罩",
+        "p1_1": "每月配送",
+        "p1_2": "适合高屏幕工作日",
+        "p1_3": "默认 9 折",
+        "p2_t": "Working Mama Core Kit",
+        "p2_d": "蚕丝眼罩 + VC + TRU NIAGEN + 钙镁 + 蒸汽眼罩",
+        "p2_1": "每月配送",
+        "p2_2": "夜间修复 + 白天支持",
+        "p2_3": "9 折 + 优先库存",
+        "p3_t": "Deep Recovery Plan",
+        "p3_d": "睡眠喷雾 + 耳塞 + 夜间修复组合",
+        "p3_1": "双月配送",
+        "p3_2": "适合睡眠波动周期",
+        "p3_3": "默认 9 折",
+        "rule_t": "订阅规则",
+        "rule_1": "可随时暂停、跳过或取消，无复杂门槛。",
+        "rule_2": "每次周期前 3 天提醒发货。",
+        "rule_3": "支持主流信用卡与后续 Stripe/Shopify 接入。",
+        "rule_cta": "开始订阅（支付占位）",
+        "faq_title": "常见问题",
+        "faq_sub": "订阅决策前的快速答案。",
+        "faq_1_q": "可以随时暂停吗？",
+        "faq_1_a": "可以，发货前可暂停与恢复。",
+        "faq_2_q": "可以中途调整订阅商品吗？",
+        "faq_2_a": "可以，在续费日前编辑清单即可。",
+        "faq_3_q": "有长期合约吗？",
+        "faq_3_a": "没有固定合约，你拥有完整控制权。",
+        "footer": "Smart routines save mental load."
+    },
+    "en": {
+        "_meta_title": "Subscription | The Only Leaf",
+        "_meta_description": "Smart subscription with auto-delivery, flexible control, and 9% savings for busy women.",
+        "nav_start": "Start Here",
+        "nav_collections": "Collections",
+        "nav_founder": "Founder",
+        "nav_science": "Science",
+        "nav_subscribe": "Subscribe 9% Off",
+        "hero_kicker": "Smart Subscription",
+        "hero_title": "Less Mental Load, Better Recovery",
+        "intro": "Designed for busy working mamas: fixed rhythm auto-delivery with 9% savings.",
+        "p1_t": "Visual Reset Plan",
+        "p1_d": "Bilberry/Lutein + steam eye mask",
+        "p1_1": "Monthly delivery",
+        "p1_2": "Best for screen-heavy workdays",
+        "p1_3": "9% off by default",
+        "p2_t": "Working Mama Core Kit",
+        "p2_d": "Silk mask + VC + TRU NIAGEN + Calcium/Magnesium + steam eye mask",
+        "p2_1": "Monthly delivery",
+        "p2_2": "Night recovery + daytime support",
+        "p2_3": "9% off + priority stock",
+        "p3_t": "Deep Recovery Plan",
+        "p3_d": "Sleep mist + earplugs + night recovery essentials",
+        "p3_1": "Every two months",
+        "p3_2": "For fluctuating sleep quality periods",
+        "p3_3": "9% off by default",
+        "rule_t": "Subscription Rules",
+        "rule_1": "Pause, skip, or cancel anytime without complex conditions.",
+        "rule_2": "3-day shipping reminder before each cycle.",
+        "rule_3": "Supports major credit cards and future Stripe/Shopify integration.",
+        "rule_cta": "Start Subscription (payment placeholder)",
+        "faq_title": "FAQ",
+        "faq_sub": "Quick answers for subscription decisions.",
+        "faq_1_q": "Can I pause anytime?",
+        "faq_1_a": "Yes, pause and resume are available before shipment.",
+        "faq_2_q": "Can I switch products in my plan?",
+        "faq_2_a": "Yes, edit line items before your renewal date.",
+        "faq_3_q": "Is there a long-term contract?",
+        "faq_3_a": "No fixed contract. You keep full control.",
+        "footer": "Smart routines save mental load."
+    },
+    "ja": {
+        "_meta_title": "Subscription | The Only Leaf",
+        "_meta_description": "自動配送・柔軟な管理・9%OFFで、忙しい女性の負担を軽くする定期便。",
+        "nav_start": "はじめに",
+        "nav_collections": "コレクション",
+        "nav_founder": "創業者",
+        "nav_science": "科学情報",
+        "nav_subscribe": "定期便 9%OFF",
+        "hero_kicker": "スマート定期便",
+        "hero_title": "負担を減らし、回復を高める",
+        "intro": "忙しい働くママ向け：固定リズムの自動配送で常時9%OFF。",
+        "p1_t": "Visual Reset Plan",
+        "p1_d": "ビルベリー/ルテイン + 蒸気アイマスク",
+        "p1_1": "毎月配送",
+        "p1_2": "画面作業が多い日に最適",
+        "p1_3": "標準で9%OFF",
+        "p2_t": "Working Mama Core Kit",
+        "p2_d": "シルクマスク + VC + TRU NIAGEN + カルシウム/マグネシウム + 蒸気アイマスク",
+        "p2_1": "毎月配送",
+        "p2_2": "夜回復 + 日中サポート",
+        "p2_3": "9%OFF + 優先在庫",
+        "p3_t": "Deep Recovery Plan",
+        "p3_d": "スリープミスト + 耳栓 + 夜間回復セット",
+        "p3_1": "隔月配送",
+        "p3_2": "睡眠品質が揺らぐ時期向け",
+        "p3_3": "標準で9%OFF",
+        "rule_t": "定期便ルール",
+        "rule_1": "複雑な条件なく、停止・スキップ・解約が可能。",
+        "rule_2": "各サイクル前に3日前リマインド。",
+        "rule_3": "主要カード対応、Stripe/Shopify連携予定。",
+        "rule_cta": "定期便を開始（決済プレースホルダー）",
+        "faq_title": "FAQ",
+        "faq_sub": "定期便前のクイック回答。",
+        "faq_1_q": "いつでも停止できますか？",
+        "faq_1_a": "はい。発送前であれば停止・再開が可能です。",
+        "faq_2_q": "途中で商品変更できますか？",
+        "faq_2_a": "はい。更新日前に内容を編集できます。",
+        "faq_3_q": "長期契約はありますか？",
+        "faq_3_a": "固定契約はありません。常に自由に管理できます。",
+        "footer": "Smart routines save mental load."
+    }
+};
+  </script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

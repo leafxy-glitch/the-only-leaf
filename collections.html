@@ -10,54 +10,196 @@
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">The Only Leaf</a>
-    <nav class="nav">
-      <a href="index.html#modules">Start Here</a>
-      <a href="collections.html">Collections</a>
-      <a href="founder.html">Founder</a>
-      <a href="science.html">Science</a>
-      <a href="subscription.html" class="cta">Subscribe 9折</a>
-    </nav>
+    <div class="header-right">
+      <nav class="nav">
+        <a href="index.html#modules" data-i18n="nav_start">Start Here</a>
+        <a href="collections.html" data-i18n="nav_collections">Collections</a>
+        <a href="founder.html" data-i18n="nav_founder">Founder</a>
+        <a href="science.html" data-i18n="nav_science">Science</a>
+        <a href="subscription.html" class="cta" data-i18n="nav_subscribe">Subscribe 9折</a>
+      </nav>
+      <div class="lang-switch">
+        <label class="sr-only" for="lang-select">Language</label>
+        <select id="lang-select" class="lang-select" data-lang-select>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="zh-CN">中文</option>
+        </select>
+      </div>
+    </div>
   </header>
+
+  <section class="mini-hero">
+    <div class="mini-hero-inner">
+      <p class="kicker" data-i18n="hero_kicker">Premium Edit for Working Women</p>
+      <h1 class="slogan" data-i18n="hero_title">Curated Collections</h1>
+    </div>
+  </section>
 
   <main class="container">
     <div class="section-head">
-      <h1>Curated Collections</h1>
-      <p>每一系都围绕一个真实问题，帮助忙碌女性更快做决定。</p>
+      <p data-i18n="intro">Each line solves one high-frequency challenge for busy women.</p>
     </div>
 
     <section id="restoration" class="card">
-      <h2>The Restoration | 修复系</h2>
-      <p>目标：恢复睡眠质量，缩短入睡准备路径。</p>
+      <h2 data-i18n="r_title">The Restoration | 修复系</h2>
+      <p data-i18n="r_desc">Restore sleep quality and shorten pre-sleep preparation.</p>
       <ul>
-        <li><strong>Dore & Rose 蚕丝眼罩</strong>：高遮光、亲肤、适合侧睡。</li>
-        <li><strong>深睡喷雾</strong>：睡前 30 秒建立稳定暗示。</li>
-        <li><strong>降噪耳塞</strong>：家中与出差场景通用。</li>
+        <li data-i18n="r_1"><strong>Dore & Rose Silk Eye Mask</strong>: blackout, skin-friendly, side-sleep ready.</li>
+        <li data-i18n="r_2"><strong>Sleep Mist</strong>: a 30-second pre-sleep cue.</li>
+        <li data-i18n="r_3"><strong>Noise-Reduction Earplugs</strong>: practical for both home and travel.</li>
       </ul>
     </section>
 
     <section id="vitality" class="card">
-      <h2>The Vitality | 生命力系</h2>
-      <p>目标：支持高密度工作周的体力与恢复能力。</p>
+      <h2 data-i18n="v_title">The Vitality | 生命力系</h2>
+      <p data-i18n="v_desc">Support stable output during high-density work weeks.</p>
       <ul>
-        <li><strong>VC</strong>：日常抵抗力支持，换季友好。</li>
-        <li><strong>NMN</strong>：线粒体能量支持，建议在专业人士指导下使用。</li>
-        <li><strong>钙镁片</strong>：缓解紧绷与压力相关疲劳。</li>
+        <li data-i18n="v_1"><strong>VC</strong>: daily immune baseline support.</li>
+        <li data-i18n="v_2"><strong>TRU NIAGEN</strong>: NAD+ metabolic support.</li>
+        <li data-i18n="v_3"><strong>Calcium + Magnesium</strong>: stress and tension support.</li>
       </ul>
     </section>
 
     <section id="visual" class="card">
-      <h2>The Visual Shield | 护眼系</h2>
-      <p>目标：减少长时间看屏幕造成的视疲劳。</p>
+      <h2 data-i18n="s_title">The Visual Shield | 护眼系</h2>
+      <p data-i18n="s_desc">Reduce visual fatigue from prolonged screen exposure.</p>
       <ul>
-        <li><strong>蓝莓 / 叶黄素</strong>：基础护眼配方。</li>
-        <li><strong>蒸汽眼罩</strong>：午后和睡前快速放松。</li>
-        <li><strong>防蓝光单品</strong>：办公室、通勤、夜间屏幕场景。</li>
+        <li data-i18n="s_1"><strong>Bilberry / Lutein</strong>: daily visual support.</li>
+        <li data-i18n="s_2"><strong>Steam Eye Mask</strong>: quick midday and bedtime reset.</li>
+        <li data-i18n="s_3"><strong>Blue-light essentials</strong>: office, commute, and night screen use.</li>
       </ul>
+    </section>
+
+    <section class="container" style="padding-left:0;padding-right:0;">
+      <div class="section-head">
+        <h2 data-i18n="faq_title">FAQ</h2>
+        <p data-i18n="faq_sub">Quick answers for faster selection.</p>
+      </div>
+      <div class="faq-list">
+        <details><summary data-i18n="faq_1_q">How do I choose among the three lines?</summary><p data-i18n="faq_1_a">Start from your top concern: sleep, energy, or eye strain.</p></details>
+        <details><summary data-i18n="faq_2_q">Is TRU NIAGEN included in vitality?</summary><p data-i18n="faq_2_a">Yes, it is one of the core picks in The Vitality line.</p></details>
+        <details><summary data-i18n="faq_3_q">Can I subscribe directly from a collection?</summary><p data-i18n="faq_3_a">Yes, jump to subscription and choose the nearest matching plan.</p></details>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <small>只保留真正值得长期回购的品类。</small>
+    <small data-i18n="footer">Only categories worth long-term repeat purchase stay here.</small>
   </footer>
+
+  <script>
+    window.PAGE_I18N = {
+    "zh-CN": {
+        "_meta_title": "Collections | The Only Leaf",
+        "_meta_description": "修复系、生命力系、护眼系三大分类，帮助忙碌女性更快完成高质量选品。",
+        "nav_start": "开始选品",
+        "nav_collections": "选品分类",
+        "nav_founder": "创始人专栏",
+        "nav_science": "科学背书",
+        "nav_subscribe": "订阅 9 折",
+        "hero_kicker": "为职场女性策展",
+        "hero_title": "策展选品",
+        "intro": "每条产品线都对应一个高频问题，让忙碌女性更快做决定。",
+        "r_title": "The Restoration | 修复系",
+        "r_desc": "恢复睡眠质量，缩短入睡准备路径。",
+        "r_1": "Dore & Rose 蚕丝眼罩：高遮光、亲肤、适合侧睡。",
+        "r_2": "睡眠喷雾：睡前 30 秒建立稳定暗示。",
+        "r_3": "降噪耳塞：家用与出差都实用。",
+        "v_title": "The Vitality | 生命力系",
+        "v_desc": "支持高密度工作周的稳定输出。",
+        "v_1": "VC：维持日常抵抗力基线。",
+        "v_2": "TRU NIAGEN：NAD+ 代谢支持。",
+        "v_3": "钙镁片：缓解压力与紧绷。",
+        "s_title": "The Visual Shield | 护眼系",
+        "s_desc": "减少长时间看屏幕带来的视觉疲劳。",
+        "s_1": "蓝莓 / 叶黄素：日常护眼支持。",
+        "s_2": "蒸汽眼罩：午后与睡前快速放松。",
+        "s_3": "防蓝光单品：办公室、通勤与夜间场景。",
+        "faq_title": "常见问题",
+        "faq_sub": "更快做选择的简明答案。",
+        "faq_1_q": "三条产品线怎么选？",
+        "faq_1_a": "从你的首要困扰出发：睡眠、能量或眼疲劳。",
+        "faq_2_q": "生命力系列有 TRU NIAGEN 吗？",
+        "faq_2_a": "有，它是 The Vitality 的核心单品之一。",
+        "faq_3_q": "可以从分类页直接去订阅吗？",
+        "faq_3_a": "可以，跳转订阅页选择对应计划即可。",
+        "footer": "只保留值得长期复购的品类。"
+    },
+    "en": {
+        "_meta_title": "Collections | The Only Leaf",
+        "_meta_description": "Explore restoration, vitality, and visual shield lines curated for busy working women and mothers.",
+        "nav_start": "Start Here",
+        "nav_collections": "Collections",
+        "nav_founder": "Founder",
+        "nav_science": "Science",
+        "nav_subscribe": "Subscribe 9% Off",
+        "hero_kicker": "Premium Edit for Working Women",
+        "hero_title": "Curated Collections",
+        "intro": "Each line solves one high-frequency challenge for busy women.",
+        "r_title": "The Restoration",
+        "r_desc": "Restore sleep quality and shorten pre-sleep preparation.",
+        "r_1": "Dore & Rose Silk Eye Mask: blackout, skin-friendly, side-sleep ready.",
+        "r_2": "Sleep Mist: a 30-second pre-sleep cue.",
+        "r_3": "Noise-Reduction Earplugs: practical for both home and travel.",
+        "v_title": "The Vitality",
+        "v_desc": "Support stable output during high-density work weeks.",
+        "v_1": "VC: daily immune baseline support.",
+        "v_2": "TRU NIAGEN: NAD+ metabolic support.",
+        "v_3": "Calcium + Magnesium: stress and tension support.",
+        "s_title": "The Visual Shield",
+        "s_desc": "Reduce visual fatigue from prolonged screen exposure.",
+        "s_1": "Bilberry / Lutein: daily visual support.",
+        "s_2": "Steam Eye Mask: quick midday and bedtime reset.",
+        "s_3": "Blue-light essentials: office, commute, and night screen use.",
+        "faq_title": "FAQ",
+        "faq_sub": "Quick answers for faster selection.",
+        "faq_1_q": "How do I choose among the three lines?",
+        "faq_1_a": "Start from your top concern: sleep, energy, or eye strain.",
+        "faq_2_q": "Is TRU NIAGEN included in vitality?",
+        "faq_2_a": "Yes, it is one of the core picks in The Vitality line.",
+        "faq_3_q": "Can I subscribe directly from a collection?",
+        "faq_3_a": "Yes, jump to subscription and choose the nearest matching plan.",
+        "footer": "Only categories worth long-term repeat purchase stay here."
+    },
+    "ja": {
+        "_meta_title": "Collections | The Only Leaf",
+        "_meta_description": "修復・生命力・護眼の3ラインから、忙しい女性向けに最適な選択を提案します。",
+        "nav_start": "はじめに",
+        "nav_collections": "コレクション",
+        "nav_founder": "創業者",
+        "nav_science": "科学情報",
+        "nav_subscribe": "定期便 9%OFF",
+        "hero_kicker": "働く女性のための厳選",
+        "hero_title": "キュレーションコレクション",
+        "intro": "各ラインは忙しい女性の高頻度課題を1つずつ解決します。",
+        "r_title": "The Restoration",
+        "r_desc": "睡眠の質を整え、就寝準備を短縮。",
+        "r_1": "Dore & Rose シルクアイマスク：高遮光・肌にやさしい・横向き寝対応。",
+        "r_2": "スリープミスト：就寝前30秒の習慣。",
+        "r_3": "ノイズ低減耳栓：自宅と移動の両方で実用的。",
+        "v_title": "The Vitality",
+        "v_desc": "高密度な仕事週間でも安定出力を支援。",
+        "v_1": "VC：日常の免疫ベースを支える。",
+        "v_2": "TRU NIAGEN：NAD+ 代謝サポート。",
+        "v_3": "カルシウム+マグネシウム：緊張とストレスケア。",
+        "s_title": "The Visual Shield",
+        "s_desc": "長時間スクリーンによる視覚疲労を軽減。",
+        "s_1": "ビルベリー / ルテイン：日常の目サポート。",
+        "s_2": "蒸気アイマスク：昼と夜のクイックリセット。",
+        "s_3": "ブルーライト対策：職場・通勤・夜間画面。",
+        "faq_title": "FAQ",
+        "faq_sub": "より早く選ぶための簡潔な回答。",
+        "faq_1_q": "3つのラインはどう選べばいいですか？",
+        "faq_1_a": "最優先の悩み（睡眠・エネルギー・目疲れ）から選んでください。",
+        "faq_2_q": "VitalityにTRU NIAGENは含まれますか？",
+        "faq_2_a": "はい。The Vitality の主要ピックの一つです。",
+        "faq_3_q": "コレクションから直接定期便に進めますか？",
+        "faq_3_a": "はい。対応プランを選んでそのまま進めます。",
+        "footer": "長期リピート価値のあるカテゴリだけを残します。"
+    }
+};
+  </script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

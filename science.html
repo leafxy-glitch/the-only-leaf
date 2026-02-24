@@ -10,53 +10,228 @@
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">The Only Leaf</a>
-    <nav class="nav">
-      <a href="index.html#modules">Start Here</a>
-      <a href="collections.html">Collections</a>
-      <a href="founder.html">Founder</a>
-      <a href="science.html">Science</a>
-      <a href="subscription.html" class="cta">Subscribe 9折</a>
-    </nav>
+    <div class="header-right">
+      <nav class="nav">
+        <a href="index.html#modules" data-i18n="nav_start">Start Here</a>
+        <a href="collections.html" data-i18n="nav_collections">Collections</a>
+        <a href="founder.html" data-i18n="nav_founder">Founder</a>
+        <a href="science.html" data-i18n="nav_science">Science</a>
+        <a href="subscription.html" class="cta" data-i18n="nav_subscribe">Subscribe 9折</a>
+      </nav>
+      <div class="lang-switch">
+        <label class="sr-only" for="lang-select">Language</label>
+        <select id="lang-select" class="lang-select" data-lang-select>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="zh-CN">中文</option>
+        </select>
+      </div>
+    </div>
   </header>
+
+  <section class="mini-hero">
+    <div class="mini-hero-inner">
+      <p class="kicker" data-i18n="hero_kicker">Science & Transparency</p>
+      <h1 class="slogan" data-i18n="hero_title">Sourcing You Can Verify</h1>
+    </div>
+  </section>
 
   <main class="container">
     <div class="section-head">
-      <h1>Science & Sourcing</h1>
-      <p>对于 30-40 岁女性，真正重要的是“成分说得清、来源查得到、风险讲明白”。</p>
+      <p data-i18n="intro">For women in their 30s and 40s, transparent sourcing and clear safety notes drive confidence.</p>
     </div>
 
     <section class="table-wrap">
       <table>
         <thead>
-          <tr><th>产品</th><th>主要成分</th><th>产地 / 制造</th><th>检测与认证</th></tr>
+          <tr><th data-i18n="h1">Product</th><th data-i18n="h2">Key Ingredient</th><th data-i18n="h3">Origin / Manufacturing</th><th data-i18n="h4">Testing & Certification</th></tr>
         </thead>
         <tbody>
-          <tr><td>VC Daily Support</td><td>抗坏血酸 + 缓释基底</td><td>日本制造</td><td>批次 COA + 微生物检测</td></tr>
-          <tr><td>NMN Focus Formula</td><td>β-NMN 高纯度</td><td>日本制造</td><td>第三方纯度检测</td></tr>
-          <tr><td>Calcium + Magnesium</td><td>钙镁复配</td><td>欧盟原料 / GMP 工厂</td><td>重金属与稳定性检测</td></tr>
-          <tr><td>Silk Eye Mask</td><td>Mulberry Silk 6A</td><td>可追溯面料来源</td><td>材质安全检测报告</td></tr>
+          <tr><td data-i18n="r1c1">VC Daily Support</td><td data-i18n="r1c2">Ascorbic acid + sustained-release base</td><td data-i18n="r1c3">Made in Japan</td><td data-i18n="r1c4">Batch COA + microbiology testing</td></tr>
+          <tr><td data-i18n="r2c1">TRU NIAGEN</td><td data-i18n="r2c2">Nicotinamide Riboside (NR)</td><td data-i18n="r2c3">US brand</td><td data-i18n="r2c4">Third-party purity testing</td></tr>
+          <tr><td data-i18n="r3c1">Calcium + Magnesium</td><td data-i18n="r3c2">Calcium-magnesium formula</td><td data-i18n="r3c3">EU ingredients / GMP facility</td><td data-i18n="r3c4">Heavy metal + stability testing</td></tr>
+          <tr><td data-i18n="r4c1">Silk Eye Mask</td><td data-i18n="r4c2">Mulberry Silk 6A</td><td data-i18n="r4c3">Traceable fabric source</td><td data-i18n="r4c4">Material safety report</td></tr>
         </tbody>
       </table>
     </section>
 
     <section class="info-grid">
       <article class="info-card">
-        <h3>我们公开什么</h3>
+        <h3 data-i18n="i1_t">What We Disclose</h3>
         <ul>
-          <li>完整配方和剂量范围</li>
-          <li>原料来源与制造国家</li>
-          <li>第三方检测摘要与批号</li>
+          <li data-i18n="i1_1">Full formula and serving range</li>
+          <li data-i18n="i1_2">Origin country and manufacturing details</li>
+          <li data-i18n="i1_3">Third-party summaries and batch references</li>
         </ul>
       </article>
       <article class="info-card">
-        <h3>安全说明</h3>
-        <p>补剂不替代药物或医疗建议。孕期、哺乳期、慢性病或正在用药人群，请先咨询医生。</p>
+        <h3 data-i18n="i2_t">Safety Notes</h3>
+        <p data-i18n="i2_d">Supplements do not replace diagnosis or treatment. Pregnant, nursing, medicated, or chronic-condition users should consult a physician first.</p>
       </article>
+    </section>
+
+    <section class="container" style="padding-left:0;padding-right:0;">
+      <div class="section-head">
+        <h2 data-i18n="faq_title">FAQ</h2>
+        <p data-i18n="faq_sub">Quick answers for science and safety.</p>
+      </div>
+      <div class="faq-list">
+        <details><summary data-i18n="faq_1_q">Do you show third-party test information?</summary><p data-i18n="faq_1_a">Yes, key third-party summaries are displayed whenever available.</p></details>
+        <details><summary data-i18n="faq_2_q">Can supplements replace medical treatment?</summary><p data-i18n="faq_2_a">No. They support wellness but do not replace clinical diagnosis or treatment.</p></details>
+        <details><summary data-i18n="faq_3_q">Who should consult a doctor first?</summary><p data-i18n="faq_3_a">Pregnant, nursing, medicated, or chronic-condition users.</p></details>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <small>Transparency first, always.</small>
+    <small data-i18n="footer">Transparency first, always.</small>
   </footer>
+
+  <script>
+    window.PAGE_I18N = {
+    "zh-CN": {
+        "_meta_title": "Science & Sourcing | The Only Leaf",
+        "_meta_description": "公开成分、产地、检测与安全说明，让30-40岁女性做出更安心的购买决策。",
+        "nav_start": "开始选品",
+        "nav_collections": "选品分类",
+        "nav_founder": "创始人专栏",
+        "nav_science": "科学背书",
+        "nav_subscribe": "订阅 9 折",
+        "hero_kicker": "科学与透明度",
+        "hero_title": "可验证的溯源体系",
+        "intro": "对 30-40 岁女性来说，来源透明与安全说明清晰是购买信心核心。",
+        "h1": "产品",
+        "h2": "主要成分",
+        "h3": "产地 / 制造",
+        "h4": "检测与认证",
+        "r1c1": "VC Daily Support",
+        "r1c2": "抗坏血酸 + 缓释基底",
+        "r1c3": "日本制造",
+        "r1c4": "批次 COA + 微生物检测",
+        "r2c1": "TRU NIAGEN",
+        "r2c2": "烟酰胺核糖（NR）",
+        "r2c3": "美国品牌",
+        "r2c4": "第三方纯度检测",
+        "r3c1": "Calcium + Magnesium",
+        "r3c2": "钙镁复配",
+        "r3c3": "欧盟原料 / GMP 工厂",
+        "r3c4": "重金属与稳定性检测",
+        "r4c1": "Silk Eye Mask",
+        "r4c2": "Mulberry Silk 6A",
+        "r4c3": "可追溯面料来源",
+        "r4c4": "材质安全检测报告",
+        "i1_t": "我们公开什么",
+        "i1_1": "完整配方和剂量范围",
+        "i1_2": "产地国家与制造细节",
+        "i1_3": "第三方检测摘要与批次信息",
+        "i2_t": "安全说明",
+        "i2_d": "补剂不替代诊疗。孕期、哺乳期、用药中或慢性病人群建议先咨询医生。",
+        "faq_title": "常见问题",
+        "faq_sub": "关于科学与安全的快速答案。",
+        "faq_1_q": "会展示第三方检测信息吗？",
+        "faq_1_a": "会，能提供的关键第三方检测摘要都会展示。",
+        "faq_2_q": "补剂能替代医疗治疗吗？",
+        "faq_2_a": "不能。补剂用于支持健康，不替代诊断和治疗。",
+        "faq_3_q": "哪些人应先咨询医生？",
+        "faq_3_a": "孕期、哺乳期、用药中或慢性病用户。",
+        "footer": "透明度优先，始终如此。"
+    },
+    "en": {
+        "_meta_title": "Science & Sourcing | The Only Leaf",
+        "_meta_description": "Clear ingredients, origins, testing, and safety notes for transparent wellness decisions.",
+        "nav_start": "Start Here",
+        "nav_collections": "Collections",
+        "nav_founder": "Founder",
+        "nav_science": "Science",
+        "nav_subscribe": "Subscribe 9% Off",
+        "hero_kicker": "Science & Transparency",
+        "hero_title": "Sourcing You Can Verify",
+        "intro": "For women in their 30s and 40s, transparent sourcing and clear safety notes drive confidence.",
+        "h1": "Product",
+        "h2": "Key Ingredient",
+        "h3": "Origin / Manufacturing",
+        "h4": "Testing & Certification",
+        "r1c1": "VC Daily Support",
+        "r1c2": "Ascorbic acid + sustained-release base",
+        "r1c3": "Made in Japan",
+        "r1c4": "Batch COA + microbiology testing",
+        "r2c1": "TRU NIAGEN",
+        "r2c2": "Nicotinamide Riboside (NR)",
+        "r2c3": "US brand",
+        "r2c4": "Third-party purity testing",
+        "r3c1": "Calcium + Magnesium",
+        "r3c2": "Calcium-magnesium formula",
+        "r3c3": "EU ingredients / GMP facility",
+        "r3c4": "Heavy metal + stability testing",
+        "r4c1": "Silk Eye Mask",
+        "r4c2": "Mulberry Silk 6A",
+        "r4c3": "Traceable fabric source",
+        "r4c4": "Material safety report",
+        "i1_t": "What We Disclose",
+        "i1_1": "Full formula and serving range",
+        "i1_2": "Origin country and manufacturing details",
+        "i1_3": "Third-party summaries and batch references",
+        "i2_t": "Safety Notes",
+        "i2_d": "Supplements do not replace diagnosis or treatment. Pregnant, nursing, medicated, or chronic-condition users should consult a physician first.",
+        "faq_title": "FAQ",
+        "faq_sub": "Quick answers for science and safety.",
+        "faq_1_q": "Do you show third-party test information?",
+        "faq_1_a": "Yes, key third-party summaries are displayed whenever available.",
+        "faq_2_q": "Can supplements replace medical treatment?",
+        "faq_2_a": "No. They support wellness but do not replace clinical diagnosis or treatment.",
+        "faq_3_q": "Who should consult a doctor first?",
+        "faq_3_a": "Pregnant, nursing, medicated, or chronic-condition users.",
+        "footer": "Transparency first, always."
+    },
+    "ja": {
+        "_meta_title": "Science & Sourcing | The Only Leaf",
+        "_meta_description": "成分・産地・検査・安全情報を明確にし、安心して選べる判断材料を提供します。",
+        "nav_start": "はじめに",
+        "nav_collections": "コレクション",
+        "nav_founder": "創業者",
+        "nav_science": "科学情報",
+        "nav_subscribe": "定期便 9%OFF",
+        "hero_kicker": "科学と透明性",
+        "hero_title": "検証可能な原料開示",
+        "intro": "30-40代女性にとって、原料透明性と安全情報の明確さは購買信頼の中核です。",
+        "h1": "製品",
+        "h2": "主要成分",
+        "h3": "産地 / 製造",
+        "h4": "検査と認証",
+        "r1c1": "VC Daily Support",
+        "r1c2": "アスコルビン酸 + 徐放性基材",
+        "r1c3": "日本製造",
+        "r1c4": "ロット COA + 微生物検査",
+        "r2c1": "TRU NIAGEN",
+        "r2c2": "ニコチンアミドリボシド（NR）",
+        "r2c3": "米国ブランド",
+        "r2c4": "第三者純度検査",
+        "r3c1": "Calcium + Magnesium",
+        "r3c2": "カルシウム+マグネシウム配合",
+        "r3c3": "EU原料 / GMP工場",
+        "r3c4": "重金属 + 安定性検査",
+        "r4c1": "Silk Eye Mask",
+        "r4c2": "Mulberry Silk 6A",
+        "r4c3": "追跡可能な生地ソース",
+        "r4c4": "素材安全レポート",
+        "i1_t": "公開している内容",
+        "i1_1": "配合と摂取量レンジの全体開示",
+        "i1_2": "原産国と製造情報",
+        "i1_3": "第三者検査要約とロット情報",
+        "i2_t": "安全上の注意",
+        "i2_d": "サプリは診断・治療の代替ではありません。妊娠中・授乳中・服薬中・慢性疾患の方は医師相談を推奨。",
+        "faq_title": "FAQ",
+        "faq_sub": "科学と安全に関するクイック回答。",
+        "faq_1_q": "第三者検査情報は公開されますか？",
+        "faq_1_a": "はい。公開可能な主要要約は表示します。",
+        "faq_2_q": "サプリは医療治療の代替になりますか？",
+        "faq_2_a": "なりません。健康支援であり診断・治療の代替ではありません。",
+        "faq_3_q": "どんな人が先に医師相談すべきですか？",
+        "faq_3_a": "妊娠中・授乳中・服薬中・慢性疾患の方。",
+        "footer": "透明性を最優先に。"
+    }
+};
+  </script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

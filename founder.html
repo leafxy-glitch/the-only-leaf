@@ -10,46 +10,176 @@
 <body>
   <header class="site-header">
     <a class="logo" href="index.html">The Only Leaf</a>
-    <nav class="nav">
-      <a href="index.html#modules">Start Here</a>
-      <a href="collections.html">Collections</a>
-      <a href="founder.html">Founder</a>
-      <a href="science.html">Science</a>
-      <a href="subscription.html" class="cta">Subscribe 9折</a>
-    </nav>
+    <div class="header-right">
+      <nav class="nav">
+        <a href="index.html#modules" data-i18n="nav_start">Start Here</a>
+        <a href="collections.html" data-i18n="nav_collections">Collections</a>
+        <a href="founder.html" data-i18n="nav_founder">Founder</a>
+        <a href="science.html" data-i18n="nav_science">Science</a>
+        <a href="subscription.html" class="cta" data-i18n="nav_subscribe">Subscribe 9折</a>
+      </nav>
+      <div class="lang-switch">
+        <label class="sr-only" for="lang-select">Language</label>
+        <select id="lang-select" class="lang-select" data-lang-select>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="zh-CN">中文</option>
+        </select>
+      </div>
+    </div>
   </header>
+
+  <section class="mini-hero">
+    <div class="mini-hero-inner">
+      <p class="kicker" data-i18n="hero_kicker">Founder Perspective</p>
+      <h1 class="slogan" data-i18n="hero_title">Leaf's Choice</h1>
+    </div>
+  </section>
 
   <main class="container">
     <div class="section-head">
-      <h1>Founder's Journal | Leaf's Choice</h1>
-      <p>你看到的每一个推荐，都来自真实使用而不是品牌广告词。</p>
+      <p data-i18n="intro">Every recommendation comes from actual use, not promotional copy.</p>
     </div>
 
     <article class="story-card">
-      <h2>01. 眼罩遮光度亲测视频</h2>
-      <p>场景：清晨自然光、办公室午休、侧睡翻身。重点比较遮光、贴合、醒来压痕。</p>
-      <div class="video-placeholder">Video Placeholder | 建议上传 45 秒竖屏短视频</div>
+      <h2 data-i18n="a1_t">01. Blackout Eye Mask Test</h2>
+      <p data-i18n="a1_d">Scenes include morning sunlight, office nap, and side-sleep movement. Focus: blackout, fit, and pressure marks.</p>
+      <div class="video-placeholder" data-i18n="a1_v">Video Placeholder | Recommended: 45-second vertical clip</div>
     </article>
 
     <article class="card">
-      <h2>02. 产后恢复体力补剂清单</h2>
+      <h2 data-i18n="a2_t">02. Postpartum Recovery Supplement List</h2>
       <ul>
-        <li>VC：优先维持基础状态与抵抗力。</li>
-        <li>钙镁：放松和睡前恢复环节。</li>
-        <li>NMN：在专业建议下评估使用。</li>
+        <li data-i18n="a2_1">VC: maintain a stable baseline and daily resilience.</li>
+        <li data-i18n="a2_2">Calcium + Magnesium: pre-sleep relaxation and tension support.</li>
+        <li data-i18n="a2_3">TRU NIAGEN: evaluate under professional guidance.</li>
       </ul>
-      <p class="small">建议发布真实周期记录：第 1 周 / 第 4 周 / 第 8 周感受。</p>
+      <p class="small" data-i18n="a2_note">Share real timeline notes: week 1 / week 4 / week 8 responses.</p>
     </article>
 
     <article class="card">
-      <h2>03. 职场女性的心路历程</h2>
-      <p>核心观点：高效并不等于持续透支。真正可持续的状态，来自可执行的恢复系统。</p>
-      <p>推荐写法：每篇只讲一个问题，例如“如何在 10 分钟内进入可休息状态”。</p>
+      <h2 data-i18n="a3_t">03. Working Woman's Mental Journey</h2>
+      <p data-i18n="a3_d1">Core idea: high efficiency is not the same as sustainable overdrive.</p>
+      <p data-i18n="a3_d2">Recommended writing style: one post, one concrete problem, one actionable routine.</p>
     </article>
+
+    <section class="container" style="padding-left:0;padding-right:0;">
+      <div class="section-head">
+        <h2 data-i18n="faq_title">FAQ</h2>
+        <p data-i18n="faq_sub">Quick trust-building answers.</p>
+      </div>
+      <div class="faq-list">
+        <details><summary data-i18n="faq_1_q">What should I publish first?</summary><p data-i18n="faq_1_a">Start with the blackout test video to build immediate credibility.</p></details>
+        <details><summary data-i18n="faq_2_q">How long should founder videos be?</summary><p data-i18n="faq_2_a">30-60 seconds works best for busy working women.</p></details>
+        <details><summary data-i18n="faq_3_q">Should I include my personal routine details?</summary><p data-i18n="faq_3_a">Yes. Honest specifics are the strongest trust and conversion asset.</p></details>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <small>Trust is built with specifics.</small>
+    <small data-i18n="footer">Trust is built with specifics.</small>
   </footer>
+
+  <script>
+    window.PAGE_I18N = {
+    "zh-CN": {
+        "_meta_title": "Founder | The Only Leaf",
+        "_meta_description": "创始人真实测评、恢复清单与职场女性日常方法，建立信任与品味。",
+        "nav_start": "开始选品",
+        "nav_collections": "选品分类",
+        "nav_founder": "创始人专栏",
+        "nav_science": "科学背书",
+        "nav_subscribe": "订阅 9 折",
+        "hero_kicker": "创始人视角",
+        "hero_title": "创始人精选",
+        "intro": "每一个推荐都来自真实使用，而不是宣传话术。",
+        "a1_t": "01. 眼罩遮光度亲测",
+        "a1_d": "场景包括清晨自然光、办公室午休与侧睡翻身。重点：遮光、贴合、醒来压痕。",
+        "a1_v": "视频占位 | 建议 45 秒竖屏短视频",
+        "a2_t": "02. 产后恢复补剂清单",
+        "a2_1": "VC：维持稳定基础状态与日常韧性。",
+        "a2_2": "钙镁：睡前放松与紧绷支持。",
+        "a2_3": "TRU NIAGEN：在专业建议下评估。",
+        "a2_note": "建议记录真实周期：第1周 / 第4周 / 第8周反馈。",
+        "a3_t": "03. 职场女性心路",
+        "a3_d1": "核心观点：高效不等于长期透支。",
+        "a3_d2": "推荐写法：一篇只讲一个问题 + 一个可执行习惯。",
+        "faq_title": "常见问题",
+        "faq_sub": "建立信任的快速回答。",
+        "faq_1_q": "应该先发布什么内容？",
+        "faq_1_a": "先发布遮光度实测视频，最快建立可信度。",
+        "faq_2_q": "创始人视频多长合适？",
+        "faq_2_a": "30-60 秒最适合忙碌职场女性。",
+        "faq_3_q": "要公开个人日常细节吗？",
+        "faq_3_a": "要。真实且具体的细节是最强信任资产。",
+        "footer": "信任建立于具体细节。"
+    },
+    "en": {
+        "_meta_title": "Founder | The Only Leaf",
+        "_meta_description": "Founder-tested routines, honest reviews, and practical recovery notes for working women.",
+        "nav_start": "Start Here",
+        "nav_collections": "Collections",
+        "nav_founder": "Founder",
+        "nav_science": "Science",
+        "nav_subscribe": "Subscribe 9% Off",
+        "hero_kicker": "Founder Perspective",
+        "hero_title": "Leaf's Choice",
+        "intro": "Every recommendation comes from actual use, not promotional copy.",
+        "a1_t": "01. Blackout Eye Mask Test",
+        "a1_d": "Scenes include morning sunlight, office nap, and side-sleep movement. Focus: blackout, fit, and pressure marks.",
+        "a1_v": "Video Placeholder | Recommended: 45-second vertical clip",
+        "a2_t": "02. Postpartum Recovery Supplement List",
+        "a2_1": "VC: maintain a stable baseline and daily resilience.",
+        "a2_2": "Calcium + Magnesium: pre-sleep relaxation and tension support.",
+        "a2_3": "TRU NIAGEN: evaluate under professional guidance.",
+        "a2_note": "Share real timeline notes: week 1 / week 4 / week 8 responses.",
+        "a3_t": "03. Working Woman's Mental Journey",
+        "a3_d1": "Core idea: high efficiency is not the same as sustainable overdrive.",
+        "a3_d2": "Recommended writing style: one post, one concrete problem, one actionable routine.",
+        "faq_title": "FAQ",
+        "faq_sub": "Quick trust-building answers.",
+        "faq_1_q": "What should I publish first?",
+        "faq_1_a": "Start with the blackout test video to build immediate credibility.",
+        "faq_2_q": "How long should founder videos be?",
+        "faq_2_a": "30-60 seconds works best for busy working women.",
+        "faq_3_q": "Should I include my personal routine details?",
+        "faq_3_a": "Yes. Honest specifics are the strongest trust and conversion asset.",
+        "footer": "Trust is built with specifics."
+    },
+    "ja": {
+        "_meta_title": "Founder | The Only Leaf",
+        "_meta_description": "創業者の実使用レビューと回復ルーティンを公開し、信頼できる選択を支援します。",
+        "nav_start": "はじめに",
+        "nav_collections": "コレクション",
+        "nav_founder": "創業者",
+        "nav_science": "科学情報",
+        "nav_subscribe": "定期便 9%OFF",
+        "hero_kicker": "創業者視点",
+        "hero_title": "創業者セレクト",
+        "intro": "すべての推薦は実使用に基づき、宣伝文ではありません。",
+        "a1_t": "01. アイマスク遮光実測",
+        "a1_d": "朝の自然光、オフィス仮眠、横向き寝を検証。重点：遮光、フィット、起床時の跡。",
+        "a1_v": "動画プレースホルダー | 45秒縦動画を推奨",
+        "a2_t": "02. 産後リカバリー補助リスト",
+        "a2_1": "VC：日常の安定ベースと回復力を維持。",
+        "a2_2": "カルシウム+マグネシウム：就寝前の緩和と緊張サポート。",
+        "a2_3": "TRU NIAGEN：専門家と相談し評価。",
+        "a2_note": "実際の期間記録：1週目 / 4週目 / 8週目。",
+        "a3_t": "03. 働く女性のメンタルジャーニー",
+        "a3_d1": "核心：高効率は持続的な過負荷と同義ではない。",
+        "a3_d2": "推奨構成：1投稿1課題 + 1つの実行習慣。",
+        "faq_title": "FAQ",
+        "faq_sub": "信頼構築のためのクイック回答。",
+        "faq_1_q": "最初に何を公開すべきですか？",
+        "faq_1_a": "遮光テスト動画から始めると、信頼を早く得られます。",
+        "faq_2_q": "創業者動画はどの長さが最適？",
+        "faq_2_a": "忙しい女性向けには30〜60秒が最適です。",
+        "faq_3_q": "個人ルーティンの詳細は出すべき？",
+        "faq_3_a": "はい。正直で具体的な情報が最も強い信頼資産です。",
+        "footer": "信頼は具体性で生まれる。"
+    }
+};
+  </script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
